@@ -13,3 +13,14 @@
 
 配置mapper扫描包路径：`@MapperScan`
 
+## 整合数据库连接池Druid
+
+依赖：
+
+- druid-spring-boot-starter
+
+源码以及配置参数文档：
+
+- [Druid Github地址](https://github.com/alibaba/druid)
+- [druid-spring-boot-starter 地址](https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter)
+
