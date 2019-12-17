@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.prysnail.springboot.mapper.ActorMapper">
+    <resultMap id="BaseResultMap" type="com.prysnail.springboot.domain.Actor">
+        <result column="actor_id" property="actorId" jdbcType="SMALLINT"/>
+        <result column="first_name" property="firstName" jdbcType="VARCHAR"/>
+        <result column="last_name" property="lastName" jdbcType="VARCHAR"/>
+        <result column="last_update" property="lastUpdate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <select id="findByFirstName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from actor where first_name = #{firstName}
+    </select>
+</mapper>
