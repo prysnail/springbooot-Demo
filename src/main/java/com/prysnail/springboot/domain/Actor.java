@@ -2,6 +2,7 @@ package com.prysnail.springboot.domain;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
@@ -10,7 +11,8 @@ import java.sql.Timestamp;
  * @date 2019/12/17 18:39
  */
 @Data
-public class Actor {
+public class Actor implements Serializable {
+    private static final long serialVersionUID = -1L;
 
     private Long actorId;
 

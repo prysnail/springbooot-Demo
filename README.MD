@@ -24,3 +24,17 @@
 - [Druid Github地址](https://github.com/alibaba/druid)
 - [druid-spring-boot-starter 地址](https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter)
 
+## 整合Redis
+
+依赖：
+
+- spring-boot-starter-data-redis
+
+Spring Boot 2.x Redis序列化及乱码解决：`RedisConfig`
+
+基于注解缓存：
+
+- @EnableCaching：开启声明式缓存支持
+- @Cacheable：先检查缓存是否存在数据，存在则返回缓存数据；不存在则将返回值放入缓存
+- @CachePut：将方法的返回值放入缓存
+- @CacheEvict：删除缓存中的数据

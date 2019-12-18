@@ -11,4 +11,8 @@
     <select id="findByFirstName" parameterType="java.lang.String" resultMap="BaseResultMap">
         select * from actor where first_name = #{firstName}
     </select>
+
+    <select id="findByActorId" parameterType="long" resultMap="BaseResultMap">
+        select * from actor where actor_id = #{actorId}
+    </select>
 </mapper>

@@ -16,4 +16,11 @@ public interface ActorMapper {
      * @return
      */
     Actor findByFirstName(@Param("firstName") String firstName);
+
+    /**
+     * 根据id查询演员信息
+     * @param actorId
+     * @return
+     */
+    Actor findByActorId(@Param("actorId") Long actorId);
 }
