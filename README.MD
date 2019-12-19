@@ -65,3 +65,11 @@ Spring Boot 2.x Redis序列化及乱码解决：`RedisConfig`
 - swagger-annotations
 
 进行覆盖
+
+## 整合RabbitMQ
+
+依赖：
+
+- spring-boot-starter-amqp
+
+配置文件: `RabbitConfig`
