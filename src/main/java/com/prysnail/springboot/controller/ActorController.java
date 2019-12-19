@@ -1,6 +1,7 @@
 package com.prysnail.springboot.controller;
 
 import com.prysnail.springboot.domain.Actor;
+import com.prysnail.springboot.exception.BaseException;
 import com.prysnail.springboot.service.ActorService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -35,7 +36,17 @@ public class ActorController {
     @ApiOperation(value = "查询演员信息" , notes = "根据actionId查询演员信息")
     @ApiImplicitParam(name = "actorId" , value = "演员id" , required = true , dataType = "long" , paramType = "path" )
     @RequestMapping(value = "/api/actor/{actorId}" , method = RequestMethod.GET)
-    Actor findByActorId(@PathVariable("actorId") Long actorId){
+    public Actor findByActorId(@PathVariable("actorId") Long actorId){
         return actorService.findByActorIdWithCache(actorId);
+    }
+
+    /**
+     * 异常测试
+     * @return
+     * @throws BaseException
+     */
+    @RequestMapping(value = "/api/actor/exception" , method = RequestMethod.GET)
+    public Actor handException() throws BaseException {
+        throw new BaseException("异常测试");
     }
 }

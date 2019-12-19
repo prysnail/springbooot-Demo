@@ -73,3 +73,11 @@ Spring Boot 2.x Redis序列化及乱码解决：`RedisConfig`
 - spring-boot-starter-amqp
 
 配置文件: `RabbitConfig`
+
+## 统一异常处理
+
+注解：
+
+- @ExceptionHandler
+- @ControllerAdvice
+- @RestControllerAdvice
