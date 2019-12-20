@@ -13,6 +13,17 @@
 
 配置mapper扫描包路径：`@MapperScan`
 
+## 整合pageHelper分页
+
+依赖：
+
+- pagehelper-spring-boot-starter
+
+使用文档：
+
+- [如何使用插件](https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md)
+- [Github pageHelper](https://github.com/pagehelper/Mybatis-PageHelper)
+
 ## 整合数据库连接池Druid
 
 依赖：

@@ -1,5 +1,6 @@
 package com.prysnail.springboot.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.prysnail.springboot.domain.Actor;
 import com.prysnail.springboot.mapper.ActorMapper;
 import com.prysnail.springboot.service.ActorService;
@@ -20,6 +21,7 @@ public class ActorServiceImpl implements ActorService  {
 
     @Override
     public Actor findByFirstName(String firstName) {
+        PageHelper.startPage(1,1);
         return actorMapper.findByFirstName(firstName);
     }
 
