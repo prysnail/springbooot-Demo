@@ -92,3 +92,9 @@ Spring Boot 2.x Redis序列化及乱码解决：`RedisConfig`
 - @ExceptionHandler
 - @ControllerAdvice
 - @RestControllerAdvice
+
+## 整合ELK
+
+依赖：logstash-logback-encoder
+
+配置文件：`logback-spring.xml`
