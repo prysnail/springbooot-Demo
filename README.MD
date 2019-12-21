@@ -95,6 +95,9 @@ Spring Boot 2.x Redis序列化及乱码解决：`RedisConfig`
 
 ## 整合ELK
 
-依赖：logstash-logback-encoder
+依赖：
+
+- logstash-logback-encoder
+- spring-boot-starter-data-elasticsearch
 
 配置文件：`logback-spring.xml`
